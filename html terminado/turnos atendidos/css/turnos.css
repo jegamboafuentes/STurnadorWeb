@@ -1,0 +1,404 @@
+/*tamaño lg grandes ordenadores*/
+.virtuales-grande{
+    display: block;
+}
+
+.virtuales-pequenio{
+    display: block;
+}
+
+.pequenio{
+    display: none;
+}
+
+.div-virtuales{
+    margin-left: -46px;
+    margin-top: 238px;
+    position: absolute;
+    z-index: 2;
+    width: auto;
+}
+
+.div-turnos{
+    margin-left: 64px;
+    margin-top: 124px;
+    position: absolute;
+    z-index: 2;
+    width: auto;;
+}
+
+.div-grafica{
+    width: 150px !important;
+    height: 400px !important;
+    min-width: 410px;
+}
+
+.marco-izquierdo{
+    /*margin-top: 25px; */
+    height:300px;
+}
+
+.marco-derecho{
+    /*margin-top: 25px !important;*/ 
+    height:300px !important;
+}
+
+.lblTurnosIzq{
+    color: #6E6E6E;
+    font-size: 35px;
+    width: auto;
+ }
+
+.lblTurnosDer{
+    color: #6E6E6E;
+    font-size: 35px;
+    width: 100%;
+
+ }
+
+.marco-central{    
+    width: 300px !important;
+    height: 240px !important;    
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.marco-principal{
+    /*margin-top: 25px;*/
+    background-color: #fff;
+    min-width: 356px;  
+    padding-top: 7px;
+    padding-bottom: 20px;
+
+}
+  
+.total{
+    color:#6E6E6E; 
+    width: 100%;
+   
+    font-size:40px; 
+}
+
+.turnos-cant-verde{
+    top: 20%;
+    color: #006837;
+    font-family:MyradProBold;
+    font-size: 40px;        
+}
+
+.virtuales-cant-verde{
+    color: #b2d956;
+    font-family:MyradProBold;
+    font-size: 40px;   
+}
+
+
+.turnos-cant-rojo{
+    top: 20%;
+    color: #FE642E;
+    font-family:MyradProBold;
+    font-size: 40px;    
+   
+}
+
+.virtuales-cant-rojo{
+    color: #FE2E2E;
+    font-family:MyradProBold;
+    font-size: 40px;
+  
+}
+
+   .total-cantidad{
+    font-family:MyradProBold;
+    font-size: 40px;
+    color:black;
+}
+
+.circulo-turnos{
+    height: 281px !important;
+    margin-left: 65.4px;
+    margin-top: 56.7px;
+    position: absolute;
+    width: 275px !important;
+    z-index: 0;
+}
+
+.linea-izquierda {
+    position: absolute;
+    border: 0;
+    border-top: 2px solid #eee;
+    margin-left: 388px;
+    margin-top: 207px;
+    width: 100px;
+    z-index: 2;
+}
+
+.linea-derecha {
+    position: absolute;
+    border: 0;
+    border-top: 2px solid #eee;
+    margin-left: -79px;
+    margin-top: 207px;
+    width: 100px;
+    z-index: 2;
+}
+
+.barra-titulo{
+    margin-top: 5%;
+    font-family: MyradProBold;
+    color: #006837;
+}
+
+.clase-titulo{
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.marco{
+    height:532px;
+    background-color: #fff; 
+    margin-top:20px;
+    box-shadow: 1px 1px 10px #999;
+}
+
+
+
+@media  screen and (max-width:1200px) {
+
+.virtuales-pequenio{
+    display: block;
+}
+
+.virtuales-grande{
+    display: block;
+}
+
+.pequenio{
+    display: none;
+}
+
+.div-turnos{
+    margin-left: 37px;
+    margin-top: 115px;
+    position: absolute;
+    z-index: 2;
+    width: auto;
+}
+
+.div-grafica{
+    width: 150px !important;
+    height: 400px !important;
+    min-width: 410px;
+}
+
+.marco-principal{
+    margin-top: 0px;
+    background-color: #fff;
+    min-width: 356px;  
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.marco-izquierdo{
+    /*margin-top: 10px ;*/
+    height: 100px;
+}
+
+.marco-derecho{
+     /*margin-top: 25px !important; */
+    height:100px !important;
+}
+
+
+.marco{
+    height:532px;
+    background-color: #fff; 
+    margin-top:-20px;
+    box-shadow: 1px 1px 10px #999;
+}
+
+.circulo-turnos{
+    height: 281px !important;
+    margin-left: 65.4px;
+    margin-top: 56.7px;
+    position: absolute;
+    width: 275px !important;
+    z-index: 0;
+}
+
+.lblTurnosIzq{
+    color: #6E6E6E;
+    font-size: 35px;
+    width: 100%;
+ }
+
+.lblTurnosDer{
+    color: #6E6E6E;
+    font-size: 35px;
+    width: 100%;
+    margin-top:20px; 
+ }
+
+.turnos-cant-verde{
+    top: 20%;
+    color: #006837;
+    font-family:MyradProBold;
+    font-size: 40px;        
+}
+
+.turnos-cant-rojo{
+    top: 20%;
+    color: #FE642E;
+    font-family:MyradProBold;
+    font-size: 40px;    
+}
+
+.div-virtuales{
+    margin-left: -64px;
+    margin-top: 214px;
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+}
+
+
+.virtuales-cant-verde{
+    color: #b2d956;
+    font-family:MyradProBold;
+    font-size: 40px;   
+}
+
+.virtuales-cant-rojo{
+    color: #FE2E2E;
+    font-family:MyradProBold;
+    font-size: 40px;
+}
+.total{
+    color:#6E6E6E; 
+    width: 100%;   
+    font-size:40px; 
+    margin-top: 20px;
+}
+
+}
+
+/*TAMAÑO MEDIANO*/
+@media  screen and (max-width:992px) {
+
+.pequenio{
+    display: block;
+}
+
+.div-grafica{
+    width: 150px !important;
+    height: 375px !important;
+    min-width: 410px;
+    margin-top: 44px;
+}
+
+.div-turnos {
+    margin-left: 0;
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.virtuales-grande{
+    display: none;
+}
+
+.virtuales-cant-verde{
+    color: #b2d956;
+    font-family:MyradProBold;
+    font-size: 40px; 
+}
+
+.virtuales-cant-rojo{
+    color: #FE2E2E;
+    font-family:MyradProBold;
+    font-size: 30px;  
+}
+
+.marco-principal{
+    margin-top: 60px;
+    background-color: #fff;
+    padding-top: 75px;
+    padding-bottom: 20px;
+    min-width: 343px;
+}
+
+
+.circulo-turnos{
+    height: 281px !important;
+    margin-left: 65.4px;
+    margin-top: 57px;
+    position: absolute;
+    width: 275px !important;
+    z-index: 0;
+}
+
+.marco{
+    height:675px;
+    background-color: #fff; 
+    margin-top:-20px;
+    box-shadow: 1px 1px 10px #999;
+}
+
+.linea-izquierda {
+    display: none;
+}
+
+.linea-derecha {
+    display: none;
+}
+
+}
+
+
+
+/*TAMAÑO MINI*/
+@media  screen and (max-width:534px) {
+
+.div-grafica{
+    width: 251px !important;
+    height: 320px !important;
+    min-width: 251px !important;
+    margin-top: 33px;
+}
+
+.circulo-turnos{
+    height: 250px !important;
+    margin-left: -14.6px;
+    margin-top: 57px;
+    position: absolute;
+    width: 250px !important;
+    z-index: 0;
+}
+
+
+.linea-izquierda {
+    display: none;
+}
+
+.linea-derecha {
+    display: none;
+}
+
+.virtuales-grande{
+    display: none;
+}
+
+.marco{
+    height:615px;
+    background-color: #fff; 
+    margin-top:-20px;
+    min-width: 361px;
+    box-shadow: 1px 1px 10px #999;
+}
+
+
+}

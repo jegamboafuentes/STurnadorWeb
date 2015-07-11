@@ -1,0 +1,72 @@
+.dias{ /*verde*/
+	color: #006837;
+	font-size: 20px;
+}
+
+.diasRojo{
+	color: #B10C14;
+	font-size: 20px;
+}
+
+.titulo{
+	background-color: transparent;
+	color: #006837;
+}
+
+
+.tituloRojo{
+	background-color: transparent;
+	color: #B10C14;
+}
+
+#DivTabla{
+	background-color: white;
+	/*box-shadow: 1px 1px 10px #999;*/
+}
+
+.sombra{
+	box-shadow: 1px 1px 10px #999;
+}
+
+
+#lun0{
+	text-align: right;
+}
+
+#mar0{
+	text-align: right;
+}
+
+#vie0{
+	text-align: right;
+}
+
+#dom0{
+	text-align: right;
+}
+
+#mar11{
+	text-align: left;
+}
+
+#jue11{
+	text-align: left;
+}
+
+#sab11{
+	text-align: left;
+}
+
+.welcome{
+	color:black;
+}
+
+.red-tooltip + .tooltip > .tooltip-inner {
+	color:#FE642E;
+	font-size: 15px;
+}
+
+.green-tooltip + .tooltip > .tooltip-inner {
+	color:#80FF00;
+	font-size: 15px;
+}

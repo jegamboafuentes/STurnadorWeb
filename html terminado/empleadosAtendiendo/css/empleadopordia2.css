@@ -1,0 +1,36 @@
+.diasRojo{
+	color: #B10C14;
+	font-size: 20px;
+}
+
+.tituloRojo{
+	color: #B10C14;
+}
+
+#lun0{
+	text-align: left;
+}
+
+#mar0{
+	text-align: left;
+}
+
+#vie0{
+	text-align: left;
+}
+
+#dom0{
+	text-align: left;
+}
+
+#mar11{
+	text-align: right;
+}
+
+#jue11{
+	text-align: right;
+}
+
+#sab11{
+	text-align: right;
+}

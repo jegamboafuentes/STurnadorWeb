@@ -1,0 +1,14 @@
+
+{
+    "production": false,
+
+    "turnosAtendidosServiceBase": "/turnosAtendidos/service/",
+    "clienteEsperaServiceBase": "/clienteEspera/service/",
+    "tiempoSinAtenderServiceBase": "/tiempoSinAtender/service/",
+    "detallesServiceBase": "/detalles/service/",
+    "empleadoAtendiendoServiceBase": "/empleadosAtendiendo/service/",
+     
+    "ajaxLoaderUrlPart": "/resource/img/ajax-loader.gif",
+    
+    "validationReportStatusTaskTime": 1000
+}

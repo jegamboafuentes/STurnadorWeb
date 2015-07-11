@@ -1,0 +1,106 @@
+
+
+.turnos{
+    float: none;
+    margin: 0 auto;
+    width: 75%;
+    background-color: white;
+}
+
+.turnosT{
+    border: 1px;    
+}
+
+.grafica{
+    float: none;
+    margin: 0 auto;
+}
+
+.td-laterales{
+    height:50%;
+    border-top: none;
+    width:30%;  
+
+}
+
+.td-centro{
+    width:40%;
+     border:none;
+
+}
+
+.total{
+    height: 100px;
+    color:#585858; 
+    width: 100%;
+    font-size:30px ; 
+    vertical-align:bottom;
+}
+
+.total-cantidad{
+    font-family:MyriadWebPro-Bold;
+}
+
+.texto-sup{
+    color:#6E6E6E; 
+    width: 100%;
+    font-size:25px ; 
+    vertical-align:bottom;
+ 
+}
+
+.virtuales-cant{
+    color: #b2d956;
+    font-family:MyradProBold;
+}
+
+.virtuales-cant-vm{
+    color: #FE2E2E;
+    font-family:MyradProBold;
+}
+
+.turnos-cant{
+    top: 20%;
+    color: #006837;
+
+    font-family:MyradProBold;
+}
+
+.turnos-cant-vm{
+    top: 20%;
+    color: #FE642E;    
+    font-family:MyradProBold;
+}
+
+
+.inferior{
+    position:relative;
+}
+
+.table-margin{
+    margin-top: 25px !important;
+}
+
+#lblTurnosIzq{
+    top: 33%;
+    left: -34%;
+    position: absolute;
+}
+
+#turnos{
+    top: 42%;
+    left: 12.3%;
+    position: absolute;
+    font-size: 25PX;
+}
+
+#totales{
+    font-family: MyradProBold;
+    top: 45%;
+    left: 40%;
+    position: absolute;
+    font-size: 25PX;
+}
+
+
+

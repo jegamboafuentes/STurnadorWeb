@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Monitoreo Turnador - Turnos atendidos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../resource/lib/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../resource/lib/css/commons.css" rel="stylesheet">
+    <link href="css/turnos.css" rel="stylesheet">
+
+    <!--JS Graficas-->
+    <script src="../resource/lib/js/jquery-2.1.1.min.js"></script>
+    <script src="../resource/lib/js/bootstrap.min.js"></script>
+    <script src="resource/lib/js/highcharts.js"></script>
+
+     
+    <title>Monitoreo Turnador - Turnos atendidos</title>
+
+  </head>
+
+  <body>
+    <script src="../resource/lib/js/menu.js"></script>
+    
+      <!--DIV DE MARIANA-->
+      <div class="jumbotron">                     
+            
+              <div class="col-lg-9 col-md-10 col-centered marco" >
+
+                <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 marco-izquierdo" >
+                  <div class="div-turnos">
+                      <div class="lblTurnosIzq col-centered">TURNOS</div>
+                      <div id="turnos" class="turnos-cant-verde col-centered"></div>
+                   
+                      <div class="lblTurnosDer col-centered pequenio">TURNOS VIRTUALES</div>
+                      <div class="virtuales-cant virtuales-cant-verde col-centered pequenio"></div>
+
+                       <div class="total  pequenio">TOTAL</div>
+                       <div class="totales total-cantidad  pequenio"></div>
+                   </div>
+                </div>
+
+                <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 marco-principal"> 
+                  <div class="div-grafica col-centered ">    
+                      <hr class="linea-izquierda">
+                      <hr class="linea-derecha">
+                      <div class="circulo-turnos" style="height:0;">
+                        <span class="imagen" >
+                           <img src="resource/lib/fonts/fte_turnosaten.png" />
+                        </span>
+                      </div>
+
+                    <div id="circularG" ></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12 marco-derecho">               
+                  <div class="div-virtuales" >                     
+                       <div class="lblTurnosDer col-centered virtuales-grande">TURNOS VIRTUALES</div>
+                       <div class="virtuales-cant virtuales-cant-verde col-centered virtuales-grande"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="total virtuales-grande">TOTAL</div>
+                    <div class="totales total-cantidad virtuales-grande"></div>
+                </div>           
+
+          </div>
+    
+
+  </div> <!--Jumbo-->
+
+
+  <script src="../resource/lib/js/commons.js"></script><!--NAVEGACION DINAMICA-->
+   <script src="js/datos.js"></script>
+   <script src="js/formato.js"></script>
+  </body>
+</html>

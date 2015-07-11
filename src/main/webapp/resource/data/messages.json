@@ -1,0 +1,133 @@
+
+{
+    
+    "alert.title.default": "Turnador Web",
+    "info.espere.por.favor": "Espere por favor",
+    "alert.button.default": "Aceptar",
+
+    "confirmDialog.button.default": "Aceptar",
+    "confirmDialog.button.default": "Aceptar",
+
+    "warn.valor.not.found": "Debe introducir un valor",
+    "warn.valorCobro.unchanged": "Nada que modificar",
+    
+    
+    
+    
+    "info.select.pais": "Seleccione alg&uacute;n pa&iacute;s",
+
+    "info.select.geografia": "Seleccione alguna geograf&iacute;a",
+    "info.select.fecha": "Seleccione alguna fecha",
+
+    "info.select.filter": "Seleccione {filter}",
+    "info.load.sucursales": "Cargando sucursales...",
+    "info.select.unidades": "Unidad de Negocio",
+
+    
+    
+
+    "title.tienda": "Tienda",
+    "title.periodo": "Periodos",
+    "title.negocio": "Negocio",
+    "title.origen": "Origen",
+    
+
+    "alert.word.success": "&iexcl;Completo!",
+    "alert.word.info": "&iexcl;Informaci&oacute;n!",
+    "alert.word.warning": "&iexcl;Atenci&oacute;n!",
+    "alert.word.danger": "&iexcl;Error!",
+    
+
+    "alert.title.default": "Costo por Transacci\u00F3n",
+    "alert.button.default": "Aceptar",
+    
+    "alert.message.seleccion.filtro": "Se debe seleccionar pa\u00EDs y geograf\u00EDa.",
+    "alert.message.seleccion.periodo": "La fecha de fin debe ser mayor o igual a la fecha de inicio.",
+    "alert.message.reporte.completo": "Generaci\u00F3n de reporte completa.",
+    "alert.message.reporte.error": "Error en generaci\u00F3n de reporte.",
+    
+    "multiselect.placeholder": "Buscar",
+    "multiselect.non.selected": "Sin selecci&oacute;n",
+    "multiselect.all.considered": "Todos considerados",
+    "multiselect.select.all": "Seleccionar todos",
+    "multiselect.selected": "seleccionados",
+    
+    "error.paises.not.found": "Paises no encontrados",
+    "error.geografias.not.found": "Geograf&iacute;as no registradas",
+    "error.geografia.not.found": "Geograf&iacute;a no encontrada",
+    
+    "warn.sucursales.not.found": "Sucursales no encontradas",
+    "warn.filter.not.found": "Registros de {filter} no obtenidos",
+    "warn.name.not.found": "Debe introducir un nombre al reporte",
+    
+    "callback.undefined": "Callback function is undefined",
+    "invalid.service.type": "Invalid service",
+    "incorrect.alert.type": "Incorrect alert type",
+    "info.select.anio": "Seleccione alg&uacute;n a&ntildeo",
+    "info.select.fecha": "Seleccione alguna fecha",
+    "info.select.unidades": "Unidad de Negocio",
+
+    "title.periodo": "Periodos",
+
+
+    "alert.message.seleccion.fecha": "Se debe seleccionar a\u00F1o y fecha.",
+    "alert.message.seleccion.anio": "Se debe seleccionar a\u00F1o.",
+    "alert.message.seleccion.fechac": "Se debe seleccionar fecha.",
+    "alert.message.seleccion.tipocobro": "Se debe seleccionar el tipo de cobro.",
+   
+
+
+    "confirmDialog.button.default": "Aceptar",
+    "confirmDialog.message.delete.periodos": "Eliminar periodos de cobro.",
+    "confirmDialog.message.delete.periodo": "Eliminar periodo de cobro.",
+    "confirmDialog.message.update.periodo": "Actualizar periodo de cobro.",
+    "confirmDialog.message.delete.undnegocio": "Eliminar Unidad de Negocio",
+    "confirmDialog.message.insert.undnegocio": "Insertar Unidad de Negocio",
+    "confirmDialog.message.update.undnegocio": "Actualizar Unidad de Negocio",
+    "confirmDialog.message.update.top": "Actualizar el Top",
+    "confirmDialog.message.insert.top": "Insertar el Top",
+    "confirmDialog.message.delete.top": "Eliminar el Top",
+    "confirmDialog.title.default": "Costo por Transacci\u00F3n",
+    "confirmDialog.button.default": "Aceptar",
+	
+
+
+    "warn.valor.not.found": "Debe introducir un valor",
+    "warn.tipoCobro.not.found": "Debe elegir un tipo de cobro",
+    "warn.valorCobro.unchanged": "Nada que modificar",
+    "warn.valor.not.numeric": "Debe ingresar informaci\u00F3n v\u00E1lida.",
+    "warn.valorCobro.unchanged": "Nada que modificar",
+
+    "alert.message.selection.undnegocio": "Debes seleccionar alguna Unidad de Negocio",
+    "alert.message.name.undnegocio": "Introduce un nombre v\u00E1lido para la Unidad de Negocio",
+    "alert.message.action.error": "Error al realizar la acci\u00F3n desada",
+    "alert.message.name.error": "Selecciona una Unidad de Negocio y un nombre v\u00E1lido",
+    "alert.message.error.delete.periodos": "No se eliminaron los periodos de cobro.",
+    "alert.message.error.delete.periodo": "No se elimino el periodo de cobro.",
+    "alert.message.error.update.periodo": "No se actualizo el periodo de cobro.",
+    "alert.message.bd.vacia": "Base de datos Vac\u00EDa",
+    "alert.message.seleccion.filtrosTop": "No se ha modificado alg\u00fan campo",
+    "alert.message.seleccion.filtroConcepto": "Ingrese un nombre para el Concepto",
+    "alert.message.seleccion.filtroConceptoId": "Ingrese un identificador para el Concepto",
+    "alert.message.seleccion.filtroTop": "Ingrese un nombre para el Top",
+    "alert.message.seleccion.filtroTopId": "Ingrese un identificador para el Top",
+    "alert.message.seleccion.top": "Seleccione alg\u00FAn top",
+    "alert.message.seleccion.concepto": "Seleccione alg\u00FAn concepto",
+    "alert.message.concepto.error": "Ingrese un nombre v\u00E1lido para el concepto [\u00danicamente caracteres alfanum\u00e9ricos y . -]",
+    "alert.message.conceptoId.error": "Ingrese un identificador v\u00E1lido para el concepto [\u00danicamente n\u00FAmeros, m\u00E1ximo 5 digitos]",
+    "alert.message.top.error": "Ingrese un nombre v\u00E1lido para el top [\u00danicamente caracteres alfanum\u00e9ricos y . -]",
+    "alert.message.topId.error": "Ingrese un identificador v\u00E1lido para el Top [\u00danicamente n\u00FAmeros, m\u00E1ximo 5 digitos]",
+    "alert.message.insert.completo": "Registro insertado",
+    "error.anio.not.found": "A&ntildeos no encontrados",
+    "error.fechas.not.found": "Fechas no registradas",
+    "error.fecha.not.found": "Fechas no encontrada",
+    "error.conceptos.not.found": "Conceptos no encontrados",
+    "error.tops.not.found": "Tops no encontrados",
+
+
+    "info.select.top": "Seleccione alg\u00FAn top",
+    "info.select.concepto": "Seleccione alg\u00FAn concepto"
+    
+    
+    
+}

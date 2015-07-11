@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Empleados atendiendo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../resource/lib/css/bootstrap.css" rel="stylesheet">
+    <link href="../resource/lib/css/bootstrap-combobox.css" rel="stylesheet">
+    <link href="../resource/lib/css/commons.css" rel="stylesheet">
+    <!-- DATA TABLES CSS -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="css/empleadopordia.css">
+
+    
+    <script src="../resource/lib/js/jquery-2.1.1.min.js"></script>
+    <script src="../resource/lib/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <script src="../resource/lib/js/menu.js"></script>
+    <!--<div class="container">-->
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <!-- Jumbotron Work AREA ****************************************************************************************-->         
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h1 id="titulo" class="titulos-graficas-barras titulos-barra verde-fuerte">Empleados por día</h1>
+        </div>
+          <div id="DivTabla" class="col-lg-8 col-lg-offset-2"> <!-- Inicia Div de la tabla -->
+          <table id="table_id" class="display" cellspacing="0" width="20%">
+            <tbody>
+              <tr id="lunes" data-placement="right" class="green-tooltip">
+                <td id="lun0" class="dias">LUNES</td>
+                <td id="lun1"></td>
+                <td id="lun2"></td>
+                <td id="lun3"></td>
+                <td id="lun4"></td>
+                <td id="lun5"></td>
+                <td id="lun6"></td>
+                <td id="lun7"></td>
+                <td id="lun8"></td>
+                <td id="lun9"></td>
+                <td id="lun10"></td>
+                <td id="lun11">&nbsp</td>
+              </tr>
+              <tr id="martes" data-placement="left" class="green-tooltip">
+                <td id="mar0">&nbsp</td>
+                <td id="mar1"></td>
+                <td id="mar2"></td>
+                <td id="mar3"></td>
+                <td id="mar4"></td>
+                <td id="mar5"></td>
+                <td id="mar6"></td>
+                <td id="mar7"></td>
+                <td id="mar8"></td>
+                <td id="mar9"></td>
+                <td id="mar10"></td>
+                <td id="mar11" class="dias">MARTES</td>
+              </tr>
+              <tr id="miercoles" data-placement="right" class="green-tooltip">
+                <td id="mie0" class="dias">MIÉRCOLES</td>
+                <td id="mie1"></td>
+                <td id="mie2"></td>
+                <td id="mie3"></td>
+                <td id="mie4"></td>
+                <td id="mie5"></td>
+                <td id="mie6"></td>
+                <td id="mie7"></td>
+                <td id="mie8"></td>
+                <td id="mie9"></td>
+                <td id="mie10"></td>
+                <td id="mie11">&nbsp</td>
+              </tr>
+              <tr id="jueves" data-placement="left" class="green-tooltip">
+                <td id="jue0">&nbsp</td>
+                <td id="jue1"></td>
+                <td id="jue2"></td>
+                <td id="jue3"></td>
+                <td id="jue4"></td>
+                <td id="jue5"></td>
+                <td id="jue6"></td>
+                <td id="jue7"></td>
+                <td id="jue8"></td>
+                <td id="jue9"></td>
+                <td id="jue10"></td>
+                <td id="jue11" class="dias">JUEVES</td>
+              </tr>
+              <tr id="viernes" data-placement="right" class="green-tooltip">
+                <td id="vie0" class="dias">VIERNES</td>
+                <td id="vie1"></td>
+                <td id="vie2"></td>
+                <td id="vie3"></td>
+                <td id="vie4"></td>
+                <td id="vie5"></td>
+                <td id="vie6"></td>
+                <td id="vie7"></td>
+                <td id="vie8"></td>
+                <td id="vie9"></td>
+                <td id="vie10"></td>
+                <td id="vie11">&nbsp</td>
+              </tr>
+              <tr id="sabado" data-placement="left" class="green-tooltip">
+                <td id="sab0">&nbsp</td>
+                <td id="sab1"></td>
+                <td id="sab2"></td>
+                <td id="sab3"></td>
+                <td id="sab4"></td>
+                <td id="sab5"></td>
+                <td id="sab6"></td>
+                <td id="sab7"></td>
+                <td id="sab8"></td>
+                <td id="sab9"></td>
+                <td id="sab10"></td>
+                <td id="sab11" class="dias">SÁBADO</td>
+              </tr>
+              <tr id="domingo" data-placement="right" class="green-tooltip">
+                <td id="dom0" class="dias">DOMINGO</td>
+                <td id="dom1"></td>
+                <td id="dom2"></td>
+                <td id="dom3"></td>
+                <td id="dom4"></td>
+                <td id="dom5"></td>
+                <td id="dom6"></td>
+                <td id="dom7"></td>
+                <td id="dom8"></td>
+                <td id="dom9"></td>
+                <td id="dom10"></td>
+                <td id="dom11">&nbsp</td>
+              </tr>
+
+
+            </tbody>
+            </table> 
+        </div><!-- Fin Div de la tabla -->
+
+
+  
+        <!-- Jumbotron FiN Work AREA ****************************************************************************************-->
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <script src="../resource/lib/js/bootstrap-combobox.js"></script>
+    <!-- DATA TABLES JS -->
+    <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+    <script src="../resource/lib/js/commons.js"></script>
+    <script type="text/javascript" src="js/dinamicTable.js"></script>
+  </body>
+</html>

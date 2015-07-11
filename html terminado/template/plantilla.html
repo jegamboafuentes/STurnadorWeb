@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Monitoreo Turnador</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../resource/lib/css/bootstrap.css" rel="stylesheet">
+    <link href="../resource/lib/css/bootstrap-combobox.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../resource/lib/css/commons.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="masthead">
+
+        <div class = "row titulo">
+          <div class="col-lg-6 col-md-6 col-sm-6"> 
+            <div class="vcenter">
+              <h1 class="barraTitulo">Turnador</h1> 
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 contenedorVertical"> 
+              <div class="vcenter">
+                <h4 class="welcome">Bienvenido</h4> 
+                <h4 class="welcome"><strong>Jorge Enrique Gamboa</strong></h4> 
+              </div>
+          </div>
+        </div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Datos Generales <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="divider"></li>
+            <li><a href="#">Suc. Villa Olimpica</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Suc. Miramontes</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="form">
+        <!--<div class="form-inline">
+          <p>Visualizar la semana:
+          <select class="combobox">
+            <option>31</option>
+            <option value="32">32</option>
+            <option>33</option>
+            <option>34</option>
+            <option>35</option>
+            <option>36</option>
+          </select></p>
+        </div>-->
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <p class="cerrarSesion">Cerrar Sesión
+            <a href="#"> <img src="../resource/lib/images/cerrar.png"  height="18" width="18"></a></p>
+        </li>          
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <ul class="nav nav-justified" align=center>
+          <li class="active"><a href="#">Turnos atendidos</a></li>
+          <li><a href="#">Cliente en espera</a></li>
+          <li><a href="#">Empleados Atendiendo</a></li>
+          <li><a href="#">Tiempo sin atender</a></li>
+          <li><a href="#">Detalle completo</a></li>
+        </ul>
+      </div>
+      </div>
+   
+        
+          
+
+        </div>
+    </div> <!-- /container -->
+
+
+    <script src="../resource/lib/js/jquery-2.1.1.min.js"></script>
+    <script src="../resource/lib/js/bootstrap.min.js"></script>
+    <script src="../resource/lib/js/bootstrap-combobox.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.combobox').combobox();
+      });
+    </script>
+  </body>
+</html>

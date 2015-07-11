@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Monitoreo Turnador - Cliente en espera</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../resource/lib/css/bootstrap.css" rel="stylesheet">
+    <link href="../resource/lib/css/commons.css" rel="stylesheet">
+    <link href="css/clienteEspera.css" rel="stylesheet">
+    <!--JS Graficas-->
+    <script src="../resource/lib/js/jquery-2.1.1.min.js"></script>
+    <script src="../resource/lib/js/bootstrap.min.js"></script>
+    <script src="../resource/lib/js/graficas.js"></script>
+
+    
+  </head>
+
+  <body>
+    
+    <script src="../resource/lib/js/menu.js"></script>
+    <!--BANDA-->
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <h1 class="titulos-graficas-barras titulos-barra">Tiempo del cliente en espera</h1>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 sombra">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-lg-offset-2 col-md-offset-2">
+
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <h2 class="banda izquierda">Promedio:   <strong id="promedio" class="remarca"> 5.9 min</strong></h2>
+              <h2 class="banda izquierda">Desviación estándar:   <strong  id="desviacion" class="remarca"> 3.54 min</strong></h2>
+          </div>
+          <div class="col-lg-4 col-md-4 col-lg-offset-2 col-lg-offset-2">
+            <h2 class="banda">Mínimo: <strong id="minimo" class="remarca"> 3.9 min</strong></h2>
+            <h2 class="banda">Máximo: <strong id="maximo" class="remarca"> 9.0 min</strong></h2>
+          </div>
+
+        </div>
+      </div>
+      <!-- GRAFICA-->
+      <div class="col-lg-6 col-md-8 col-sm-12 col-centered">
+        <div class="col-lg-10 col-md-10 col-sm-8 col-lg-offset-1 col-md-offset-1 col-sm-offset-2 marco-grafica sombra">
+          <h1 class="titulos-graficas-barras titulos-grafica">Tiempo promedio del cliente en espera</h1>
+          <div id="client" class="grafica "></div>
+        </div>
+      </div>
+    <script src="../resource/lib/js/commons.js"></script><!--NAVEGACION DINAMICA-->
+    <script src="js/datos.js"></script>
+  </body>
+</html>

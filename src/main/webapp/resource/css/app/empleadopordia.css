@@ -1,0 +1,115 @@
+.verde-empleados{
+    color: #006837;
+}
+.rojo-empleados{
+    color: #B10C14;
+}
+
+.pares{
+    text-align: left;
+    display: inherit;
+}
+
+.nones{
+    text-align: right;
+}
+
+.titulo{
+    background-color: transparent;
+    color: #006837;
+}
+
+.tituloRojo{
+    background-color: transparent;
+    color: #B10C14;
+}
+
+#DivTabla{
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.sombra{
+    box-shadow: 1px 1px 10px #999;
+}
+
+.welcome{
+    color:black;
+}
+
+.red-tooltip + .tooltip > .tooltip-inner {
+    color:#FE642E;
+    font-size: 15px;
+}
+
+.green-tooltip + .tooltip > .tooltip-inner {
+    color:#80FF00;
+    font-size: 15px;
+}
+
+.macarenos{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 9px;
+    margin-right: 9px;
+    display: inline-block;
+}
+
+.columna-dia{
+    height: auto;
+}
+
+.borde-columna{
+    border-bottom: 1px rgba(204,204,204,1)  solid;
+}
+
+.columna-datos{
+    height: auto;
+    padding-left: 0px; 
+    padding-right: 0px;
+}
+
+.columna-sobra{
+    height: 15px;
+}
+.dias{
+    font-size: 22px;
+    margin-top: 30px;
+}    
+.jumbotron{
+    padding-top: 0px !important;
+}
+
+.pares-pequenio{
+    display: none;
+}
+
+@media (max-width: 767px) { 
+    .dias{
+        font-size: 20px !important;
+        margin-top: 2px !important;
+        height: auto;
+    }
+    .nones{
+        text-align: center;
+    }
+    .pares{
+        text-align: center;
+        display: none;
+    }
+    .pares-pequenio{
+        display: inherit;
+    }
+    .macarenos{
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 3px;
+        margin-right: 3px;
+        display: inline-block;
+    }
+}
+
+
+
+

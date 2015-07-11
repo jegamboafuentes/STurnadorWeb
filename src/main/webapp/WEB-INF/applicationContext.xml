@@ -1,0 +1,89 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+    <context:component-scan base-package="com.baz.scc"/>
+    
+    <context:property-placeholder location="classpath:application.properties, classpath:connection.properties" system-properties-mode="OVERRIDE" />
+    
+    <bean id="as400DataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="${as400.driverClassName}" />
+        <property name="jdbcUrl" value="#{${application.produccion} ? '${prod.as400.url}' : '${des.as400.url}'}" />
+        <property name="user" value="#{${application.produccion} ? '${prod.as400.username}' : '${des.as400.username}'}" />
+        <property name="password" value="#{${application.produccion} ? '${prod.as400.password}' : '${des.as400.password}'}" />
+        <property name="minPoolSize" value="2"/>
+        <property name="maxPoolSize" value="10"/>
+        <property name="acquireIncrement" value="1"/>
+        <property name="maxIdleTime" value="1800"/>
+        <property name="maxConnectionAge" value="300"/>
+        <property name="checkoutTimeout" value="${global.timeout}"/>
+        <property name="acquireRetryAttempts" value="5"/>
+        <property name="acquireRetryDelay" value="2000"/>
+        <property name="testConnectionOnCheckout" value="true"/>
+        <property name="preferredTestQuery" value="SELECT 1 FROM sysibm.sysdummy1"/>
+    </bean>
+    
+    <bean id="usrcajaDataSource" class="oracle.ucp.jdbc.PoolDataSourceFactory" 
+          factory-method="getPoolDataSource">
+        <property name="URL" value="#{${application.produccion} ? '${prod.oracle.url}' : '${des.oracle.url}'}"/>
+        <property name="user" value="#{${application.produccion} ? '${prod.oracle.username}' : '${des.oracle.username}'}" />
+        <property name="password" value="#{${application.produccion} ? '${prod.oracle.password}' : '${des.oracle.password}'}" />
+        <property name="connectionFactoryClassName" value="oracle.jdbc.pool.OracleDataSource"/>
+        <property name="minPoolSize" value="2"/>
+        <property name="maxPoolSize" value="10"/>
+        <!--<property name="initialPoolSize" value="5"/>-->
+        <property name="inactiveConnectionTimeout" value="120"/>
+        <property name="validateConnectionOnBorrow" value="true"/>
+        <property name="maxStatements" value="10"/>
+        <property name="sQLForValidateConnection" value="SELECT 1 FROM DUAL"/>
+    </bean>
+    
+    <bean id="as400JdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg ref="as400DataSource" />
+    </bean>
+    
+    <bean id="usrcajaJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg ref="usrcajaDataSource" />
+    </bean>
+    
+    <!-- Los JDBC no están asociados a la base de datos correcta -->
+    <alias name="usrcajaJdbcTemplate" alias="plantillaJdbcTemplate"/>
+    <alias name="usrcajaJdbcTemplate" alias="oracleJdbcTemplate"/>
+    
+    <bean class="com.baz.scc.turnadorweb.support.CjCRAppConfig">
+        <property name="idAplicacion" value="${application.id}"/>
+        <!--<property name="navigationRole" value="${navigation.role.default}"/>-->
+    </bean>
+    
+    <!--
+    <bean class="com.baz.scc.costoxtransac.support.CjCRNavigationConfig">
+        <property name="configFlowUrl" value="${application.config.flow.url}"/>
+    </bean>
+    -->
+    
+    <!--
+    <bean id="virtualReportConfig" class="com.baz.scc.commons.model.CjCRVirtualReportConfig" scope="prototype">
+        <property name="reportName" value="${report.report.name}"/>
+        <property name="temporalUrl" value="#{${application.produccion} ? '${report.temporal.url.production}' : '${report.temporal.url.develoment}'}"/>
+        <property name="maxSize" value="${report.max.size}"/>
+        <property name="ignorePagination" value="${report.ignore.pagination}"/>
+        <property name="readOnly" value="${report.read.only}"/>
+        <property name="blockSize" value="${report.block.size}"/>
+        <property name="minGrowCount" value="${report.min.grow.count}"/>
+    </bean>
+    -->
+
+    <bean id="daoConfig" class="com.baz.scc.commons.support.CjCRDaoConfig">
+        <property name="objectUser" value="#{${application.produccion} ? '${prod.oracle.object.user}' : '${des.oracle.object.user}'}"/>
+    </bean>
+    
+    <bean id="messageSource"
+        class="org.springframework.context.support.ResourceBundleMessageSource">  
+    <property name="basename" value="messages"/>
+    </bean>
+</beans>

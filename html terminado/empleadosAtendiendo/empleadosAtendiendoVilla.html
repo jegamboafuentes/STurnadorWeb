@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Empleados atendiendo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../resource/lib/css/bootstrap.css" rel="stylesheet">
+    <link href="../resource/lib/css/bootstrap-combobox.css" rel="stylesheet">
+    <link href="../resource/lib/css/commons2.css" rel="stylesheet">
+    <!-- DATA TABLES CSS -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="css/empleadopordia2.css">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="masthead">
+
+        <div class = "row titulo">
+          <div class="col-lg-6 col-md-6 col-sm-6"> 
+            <div class="vcenter">
+              <h1 class="barraTitulo">Turnador</h1> 
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 contenedorVertical"> 
+              <div class="vcenter">
+                <h4 class="welcome">Bienvenido</h4> 
+                <h4 class="welcome"><strong>Jorge Enrique Gamboa</strong></h4> 
+              </div>
+          </div>
+        </div>
+
+<!-- NAVBAR INICIO -->
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a id="#sucursal" href="#" class="dropdown-toggle" data-toggle="dropdown">Villa Olimpica<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="empleadosAtendiendoMiramontes.html">Miramontes</a></li>
+                    <li class="divider"></li>
+                    <li><a href="empleadosAtendiendo.html">Datos Generales</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="navbar-form navbar-left" role="form">
+                <div class="form-inline">
+                  <p class="leyenda-combo">Visualizar la semana:
+                  <select id="comboSemana" class="combo-lista">
+                    <option>33</option>
+                    <option>34</option>
+                  </select></p>
+                </div>
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <p class="cerrarSesion">Cerrar Sesión
+                    <a href="../turnos atendidos/login/login.html"> <img src="../resource/lib/images/cerrar.png"  height="18" width="18"></a></p>
+                </li>          
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>  <!-- NAVBAR FIN-->
+  
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <ul class="nav nav-justified" align=center>
+          <li><a href="../turnos atendidos/turnos/villa.html">Turnos atendidos</a></li>
+          <li><a href="../clienteEspera/clienteEsperaDetalleVilla.html">Cliente en espera</a></li>
+          <li class="active"><a href="#">Empleados Atendiendo</a></li>
+          <li><a href="../tiemposSinAtender/tiemposSinAtenderDetVilla.html">Tiempo sin atender</a></li>
+          <li><a href="../Detalle/detalle_villa.html">Detalle completo</a></li>
+        </ul>
+      </div>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <!-- Jumbotron Work AREA ****************************************************************************************-->
+          <p id="titulo">Empleados por día</p>
+          <table id="table_id" class="display" cellspacing="0" width="20%">
+            <tbody>
+              <tr>
+                <td id="lun0" class="dias">LUNES</td>
+                <td id="lun1"><img src="img/p0.png"></td>
+                <td id="lun2"><img src="img/p0.png"></td>
+                <td id="lun3"><img src="img/p0.png"></td>
+                <td id="lun4"><img src="img/p0.png"></td>
+                <td id="lun5"><img src="img/p0.png"></td>
+                <td id="lun6"><img src="img/p0.png"></td>
+                <td id="lun7"><img src="img/p0.png"></td>
+                <td id="lun8"><img src="img/p0.png"></td>
+                <td id="lun9"><img src="img/p0.png"></td>
+                <td id="lun10"><img src="img/p0.png"></td>
+                <td id="lun11">&nbsp</td>
+              </tr>
+              <tr>
+                <td id="mar0">&nbsp</td>
+                <td id="mar1"><img src="img/p0.png"></td>
+                <td id="mar2"><img src="img/p0.png"></td>
+                <td id="mar3"><img src="img/p0.png"></td>
+                <td id="mar4"><img src="img/p0.png"></td>
+                <td id="mar5"><img src="img/p0.png"></td>
+                <td id="mar6"><img src="img/p0.png"></td>
+                <td id="mar7"><img src="img/p0.png"></td>
+                <td id="mar8"><img src="img/p0.png"></td>
+                <td id="mar9"><img src="img/p0.png"></td>
+                <td id="mar10"><img src="img/p0.png"></td>
+                <td id="mar11" class="dias">MARTES</td>
+              </tr>
+              <tr>
+                <td id="mie0" class="dias">MIÉRCOLES</td>
+                <td id="mie1"><img src="img/p0.png"></td>
+                <td id="mie2"><img src="img/p0.png"></td>
+                <td id="mie3"><img src="img/p0.png"></td>
+                <td id="mie4"><img src="img/p0.png"></td>
+                <td id="mie5"><img src="img/p0.png"></td>
+                <td id="mie6"><img src="img/p0.png"></td>
+                <td id="mie7"><img src="img/p0.png"></td>
+                <td id="mie8"><img src="img/p0.png"></td>
+                <td id="mie9"><img src="img/p0.png"></td>
+                <td id="mie10"><img src="img/p0.png"></td>
+                <td id="mie11">&nbsp</td>
+              </tr>
+              <tr>
+                <td id="jue0">&nbsp</td>
+                <td id="jue1"><img src="img/p0.png"></td>
+                <td id="jue2"><img src="img/p0.png"></td>
+                <td id="jue3"><img src="img/p0.png"></td>
+                <td id="jue4"><img src="img/p0.png"></td>
+                <td id="jue5"><img src="img/p0.png"></td>
+                <td id="jue6"><img src="img/p0.png"></td>
+                <td id="jue7"><img src="img/p0.png"></td>
+                <td id="jue8"><img src="img/p0.png"></td>
+                <td id="jue9"><img src="img/p0.png"></td>
+                <td id="jue10"><img src="img/p0.png"></td>
+                <td id="jue11" class="dias">JUEVES</td>
+              </tr>
+              <tr>
+                <td id="vie0" class="dias">VIERNES</td>
+                <td id="vie1"><img src="img/p0.png"></td>
+                <td id="vie2"><img src="img/p0.png"></td>
+                <td id="vie3"><img src="img/p0.png"></td>
+                <td id="vie4"><img src="img/p0.png"></td>
+                <td id="vie5"><img src="img/p0.png"></td>
+                <td id="vie6"><img src="img/p0.png"></td>
+                <td id="vie7"><img src="img/p0.png"></td>
+                <td id="vie8"><img src="img/p0.png"></td>
+                <td id="vie9"><img src="img/p0.png"></td>
+                <td id="vie10"><img src="img/p0.png"></td>
+                <td id="vie11">&nbsp</td>
+              </tr>
+              <tr>
+                <td id="sab0">&nbsp</td>
+                <td id="sab1"><img src="img/p0.png"></td>
+                <td id="sab2"><img src="img/p0.png"></td>
+                <td id="sab3"><img src="img/p0.png"></td>
+                <td id="sab4"><img src="img/p0.png"></td>
+                <td id="sab5"><img src="img/p0.png"></td>
+                <td id="sab6"><img src="img/p0.png"></td>
+                <td id="sab7"><img src="img/p0.png"></td>
+                <td id="sab8"><img src="img/p0.png"></td>
+                <td id="sab9"><img src="img/p0.png"></td>
+                <td id="sab10"><img src="img/p0.png"></td>
+                <td id="sab11" class="dias">SÁBADO</td>
+              </tr>
+              <tr>
+                <td id="dom0" class="dias">DOMINGO</td>
+                <td id="dom1"><img src="img/p0.png"></td>
+                <td id="dom2"><img src="img/p0.png"></td>
+                <td id="dom3"><img src="img/p0.png"></td>
+                <td id="dom4"><img src="img/p0.png"></td>
+                <td id="dom5"><img src="img/p0.png"></td>
+                <td id="dom6"><img src="img/p0.png"></td>
+                <td id="dom7"><img src="img/p0.png"></td>
+                <td id="dom8"><img src="img/p0.png"></td>
+                <td id="dom9"><img src="img/p0.png"></td>
+                <td id="dom10"><img src="img/p0.png"></td>
+                <td id="dom11">&nbsp</td>
+              </tr>
+
+
+            </tbody>
+            </table> 
+
+
+  
+        <!-- Jumbotron FiN Work AREA ****************************************************************************************-->
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <script src="../resource/lib/js/jquery-2.1.1.min.js"></script>
+    <script src="../resource/lib/js/bootstrap.min.js"></script>
+    <script src="../resource/lib/js/bootstrap-combobox.js"></script>
+    <!-- DATA TABLES JS -->
+    <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="js/dinamicTable.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.combobox').combobox();
+      });
+    </script>
+  </body>
+</html>
